@@ -9,37 +9,45 @@
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
 <style>
+  /* Make Our Mission and Daily Bible Verse white */
+  #out_mission_section p,
+  #daily_bible_verse_section p,
+  #daily_bible_verse_section #bible_verse {
+    color: #ffffff;
+  }
+
   /* Flex container for categories */
   #categories_container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 20px;
   }
 
-  /* Individual category box */
+  /* Individual category box (smaller) */
   .category_box {
     background-color: #f0f4f8;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 15px;
-    flex: 1 1 30%; /* 3 columns, responsive */
+    padding: 12px;
+    flex: 1 1 28%; /* smaller width for 3 columns */
     box-sizing: border-box;
   }
 
   /* Category title in blue */
   .category_box h2 {
     color: #1e73be;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-size: 1.1em;
     border-bottom: 1px solid #1e73be;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
   }
 
   /* List of subposts */
   .category_box ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 18px;
   }
 
   .category_box ul li a {
@@ -51,7 +59,7 @@
     text-decoration: underline;
   }
 
-  /* Adjust for smaller screens */
+  /* Responsive adjustments */
   @media (max-width: 900px) {
     .category_box {
       flex: 1 1 45%;
