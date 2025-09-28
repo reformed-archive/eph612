@@ -2,86 +2,115 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A brief introduction to Reformed Theology.">
-<title>Reformed Theology Blog</title>
+<title>Reformed Archive Blog</title>
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-        color: #333;
-        margin: 0;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    h1 {
-        color: #2c3e50;
-        margin-bottom: 40px;
-    }
-    .post {
-        background-color: #fff;
-        border-radius: 20px; /* smaller circles */
-        border: 2px solid #2c3e50;
-        padding: 20px;
-        margin: 20px 0;
-        max-width: 700px;
-        width: 100%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .post h2 {
-        margin-top: 0;
-        color: #2c3e50;
-    }
-    .post ul {
-        margin-left: 20px;
-    }
-    footer {
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #777;
-    }
+/* Blog page redesign */
+#templatemo_content {
+    clear: both;
+    width: 960px;
+    margin: 30px auto 50px auto;
+}
+
+.blog-post {
+    display: block;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.blog-post h2 {
+    margin: 0 0 10px 0;
+    color: #0099CC;
+}
+
+.blog-post h3 {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.blog-post p {
+    margin: 0;
+}
+
+#templatemo_container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#templatemo_menu ul {
+    text-align: center;
+}
+
+#templatemo_menu ul li a {
+    padding: 8px 20px;
+}
 </style>
 </head>
 <body>
+<div id="templatemo_container">
 
-<h1>Reformed Theology Blog</h1>
+    <!-- Header -->
+    <div id="templatemo_header">
+        <div id="out_mission_section">
+            <p>Welcome to the Reformed Archive Blog. Stay updated with our latest posts.</p>
+        </div>
+        <div id="daily_bible_verse_section">
+            <p>Do to others as you would have them do to you.</p>
+            <div id="bible_verse">Luke 6:31</div>
+        </div>
+    </div>
 
-<!-- Most Recent Post -->
-<div class="post">
-    <h2>Understanding Reformed Theology</h2>
-    <p>Reformed Theology, rooted in the Protestant Reformation of the 16th century, emphasizes God’s sovereignty, the authority of Scripture, and salvation by grace through faith. It has shaped much of the Christian tradition, influencing churches, theology, and culture across centuries.</p>
-    
-    <h3>Key Principles</h3>
-    <ul>
-        <li><strong>God’s Sovereignty:</strong> God is in complete control over all creation and history.</li>
-        <li><strong>Scripture Alone:</strong> The Bible is the ultimate authority in matters of faith and practice.</li>
-        <li><strong>Salvation by Grace:</strong> Salvation is a gift from God, received through faith, not earned by works.</li>
-        <li><strong>The Five Points of Calvinism (TULIP):</strong>
-            <ul>
-                <li>Total Depravity</li>
-                <li>Unconditional Election</li>
-                <li>Limited Atonement</li>
-                <li>Irresistible Grace</li>
-                <li>Perseverance of the Saints</li>
-            </ul>
-        </li>
-    </ul>
-    
-    <h3>Why It Matters</h3>
-    <p>Reformed Theology offers a framework for understanding God’s plan and purpose. It encourages believers to trust in God’s wisdom and to live in gratitude for the gift of salvation. Its rich tradition continues to influence preaching, worship, and Christian thought today.</p>
+    <!-- Menu -->
+    <div id="templatemo_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="subpage.html">Community</a></li>
+            <li><a href="blog.html" class="current">Blog</a></li>
+            <li><a href="subpage.html">FAQs</a></li>
+            <li><a href="subpage.html">About Us</a></li>
+            <li><a href="subpage.html" class="last">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Blog posts -->
+    <div id="templatemo_content">
+
+        <a href="blog_posts/post1.html" class="blog-post">
+            <h2>Post Title One</h2>
+            <h3>September 28, 2025</h3>
+            <p>This is a summary of the first blog post. Click anywhere to read more.</p>
+        </a>
+
+        <a href="blog_posts/post2.html" class="blog-post">
+            <h2>Post Title Two</h2>
+            <h3>September 20, 2025</h3>
+            <p>This is a summary of the second blog post. Click anywhere to read more.</p>
+        </a>
+
+        <a href="blog_posts/test_post.html" class="blog-post">
+            <h2>Test Post</h2>
+            <h3>September 28, 2025</h3>
+            <p>This is a test blog post. Click anywhere to read more.</p>
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="templatemo_footer">
+        Copyright © 2025 Reformed Archive
+    </div>
+
 </div>
-
-<!-- First Post (Older) -->
-<div class="post">
-    <h2>Introduction to Christian Theology</h2>
-    <p>This post introduces the basics of Christian Theology, exploring key doctrines, Scripture, and the historical development of Christian thought. It sets the foundation for understanding Reformed Theology and its unique emphasis on God’s sovereignty and grace.</p>
-</div>
-
-<footer>
-    &copy; 2025 Reformed Theology Insights
-</footer>
-
 </body>
 </html>
