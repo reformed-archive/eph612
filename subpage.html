@@ -3,49 +3,100 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>free css template for church websites</title>
-<meta name="keywords" content="free css templates, church website, CSS, HTML" />
-<meta name="description" content="Church website layout - free css template provided by templatemo.com" />
+<title>Community Board - The Church</title>
+<meta name="keywords" content="community board, church topics, CSS template" />
+<meta name="description" content="Community board page where topics and resources are listed." />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-<!-- Free CSS Templates from TemplateMo.com -->
 
 <style>
-/* Make the Our Mission text and the Daily Bible Verse text white */
-#out_mission_section p,
-#daily_bible_verse_section p,
-#daily_bible_verse_section #bible_verse {
-    color: #ffffff;
-}
+  /* Styling for the board and sidebar */
+  .board_section {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+  .board_section h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .board_section ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  .board_section ul li {
+    margin-bottom: 8px;
+  }
+  .sidebar_images img {
+    display: block;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+  }
 </style>
 </head>
 <body>
 <div id="templatemo_container">
-	<div id="templatemo_header">
-        <div id="out_mission_section">
-            <p>
-            Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Nullam sollici tudin libero. Maece nas posuere congue massa. <a href="subpage.html">more...</a>
-            </p>
+
+  <div id="templatemo_header">
+      <h1 style="color:white; padding:10px;">Community Board</h1>
+  </div> <!-- end of header -->
+
+  <div id="templatemo_menu">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="subpage.html" class="current">Community</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="subpage.html">FAQs</a></li>  
+          <li><a href="subpage.html">About Us</a></li> 
+          <li><a href="subpage.html" class="last">Contact Us</a></li>                     
+      </ul> 
+  </div> <!-- end of menu -->
+
+  <div id="templatemo_content">
+    
+    <!-- Left/Main column -->
+    <div id="templatemo_left">
+        <div class="board_section">
+            <h2>Discussion Topics</h2>
+            <ul>
+              <li><a href="#">Church History</a></li>
+              <li><a href="#">Bible Study Guides</a></li>
+              <li><a href="#">Prayer Requests</a></li>
+              <li><a href="#">Community Events</a></li>
+              <li><a href="#">Youth & Education</a></li>
+              <li><a href="#">Volunteer Opportunities</a></li>
+            </ul>
         </div>
-        <div id="daily_bible_verse_section">
-        	<p> Do to others as you would have them do to you. </p>
-        	<div id="bible_verse">Luke 6:31</div>
+
+        <div class="board_section">
+            <h2>Resources</h2>
+            <ul>
+              <li><a href="#">Download Weekly Bulletin (PDF)</a></li>
+              <li><a href="#">Sermon Archive</a></li>
+              <li><a href="#">Reading Plan</a></li>
+              <li><a href="#">Outreach Programs</a></li>
+            </ul>
         </div>
-    
-    </div> <!-- end of header -->
-    
-    <div id="templatemo_menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="current">Community</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="#">FAQs</a></li>  
-            <li><a href="#">About Us</a></li> 
-            <li><a href="#" class="last">Contact Us</a></li>                     
-        </ul> 
-    </div> <!-- end of menu -->
-    
-    <div id="templatemo_content">
-    	<div id="templatemo_left">
-        	<div id="templatemo_news_section">
-            	<h1>News</h1>
-                 <div class="templatemo_news_box
+    </div> <!-- end of left -->
+
+    <!-- Right/Sidebar column -->
+    <div id="templatemo_right">
+        <div class="sidebar_images">
+            <a href="index.html"><img src="images/templatemo_image_01.jpg" alt="Go to Home" /></a>
+            <a href="blog.html"><img src="images/templatemo_map.jpg" alt="Blog" /></a>
+            <a href="subpage.html"><img src="images/templatemo_ca.jpg" alt="Community Activities" /></a>
+        </div>
+    </div> <!-- end of right -->
+
+  </div> <!-- end of content -->
+
+  <div id="templatemo_footer">
+      Copyright © 2025 Reformed Archive
+  </div> <!-- end of footer -->
+
+</div> <!-- end of container -->
+</body>
+</html>
