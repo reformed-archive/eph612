@@ -7,26 +7,85 @@
 <meta name="keywords" content="articles, resources, categories, theology, Bible studies" />
 <meta name="description" content="Browse categories and articles from the Reformed Archive." />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<style>
+  /* Flex container for categories */
+  #categories_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Individual category box */
+  .category_box {
+    background-color: #f0f4f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 30%; /* 3 columns, responsive */
+    box-sizing: border-box;
+  }
+
+  /* Category title in blue */
+  .category_box h2 {
+    color: #1e73be;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #1e73be;
+    padding-bottom: 5px;
+  }
+
+  /* List of subposts */
+  .category_box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .category_box ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .category_box ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Adjust for smaller screens */
+  @media (max-width: 900px) {
+    .category_box {
+      flex: 1 1 45%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .category_box {
+      flex: 1 1 100%;
+    }
+  }
+</style>
 </head>
 <body>
 <div id="templatemo_container">
-    
+
+    <!-- Header with Mission and Daily Verse -->
     <div id="templatemo_header">  	
         <div id="out_mission_section">
             <p>
-            Welcome to the archive of articles and resources. Browse categories below to explore writings, studies, and reflections. 
+            Lorem ipsum dolor sit amet, consec tetur adipi scing elit. Nullam sollici tudin libero. Maece nas posuere congue massa. <a href="subpage.html">more...</a>
             </p>
         </div>   
         <div id="daily_bible_verse_section">
-        	<p> "Your word is a lamp to my feet and a light to my path." </p>
-        	<div id="bible_verse">Psalm 119:105</div>
+            <p>For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places.</p>
+            <div id="bible_verse">Ephesians 6:12</div>
         </div>
     </div> <!-- end of header -->
 
+    <!-- Menu -->
     <div id="templatemo_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="subpage.html" class="current">Community</a></li>
+            <li><a href="subpage.html" class="current">Articles</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="subpage.html">FAQs</a></li>  
             <li><a href="subpage.html">About Us</a></li> 
@@ -34,65 +93,48 @@
         </ul> 
     </div> <!-- end of menu -->
 
+    <!-- Content: 3-column categories -->
     <div id="templatemo_content">
-        <div id="templatemo_left">
-            <div id="templatemo_news_section">
-                <h1>Categories</h1>
-
-                <div class="templatemo_news_box">
-                    <h2>Theology</h2>
-                    <ul>
-                        <li><a href="articles/sovereignty-of-god.html">The Sovereignty of God</a></li>
-                        <li><a href="articles/doctrine-of-grace.html">Understanding the Doctrines of Grace</a></li>
-                        <li><a href="articles/trinity.html">The Trinity Explained</a></li>
-                    </ul>
-                </div>
-
-                <div class="templatemo_news_box">
-                    <h2>Bible Studies</h2>
-                    <ul>
-                        <li><a href="articles/study-romans.html">Study in Romans</a></li>
-                        <li><a href="articles/psalm-23.html">Meditation on Psalm 23</a></li>
-                        <li><a href="articles/sermon-mount.html">The Sermon on the Mount</a></li>
-                    </ul>
-                </div>
-
-                <div class="templatemo_news_box">
-                    <h2>Church History</h2>
-                    <ul>
-                        <li><a href="articles/reformation.html">The Protestant Reformation</a></li>
-                        <li><a href="articles/church-fathers.html">Early Church Fathers</a></li>
-                        <li><a href="articles/confessions.html">Historic Confessions of Faith</a></li>
-                    </ul>
-                </div>
-
-                <div class="templatemo_news_box">
-                    <h2>Practical Christian Living</h2>
-                    <ul>
-                        <li><a href="articles/prayer-life.html">Growing in Prayer</a></li>
-                        <li><a href="articles/stewardship.html">Faithful Stewardship</a></li>
-                        <li><a href="articles/discipleship.html">Everyday Discipleship</a></li>
-                    </ul>
-                </div>
+        <div id="categories_container">
+            <div class="category_box">
+                <h2>Theology</h2>
+                <ul>
+                    <li><a href="articles/sovereignty-of-god.html">The Sovereignty of God</a></li>
+                    <li><a href="articles/doctrine-of-grace.html">Understanding the Doctrines of Grace</a></li>
+                    <li><a href="articles/trinity.html">The Trinity Explained</a></li>
+                </ul>
             </div>
-        </div> <!-- end of left -->
 
-        <div id="templatemo_right">
-            <div class="right_col_section">
-                <h2>Welcome to the Archive</h2>
-                <p>
-                    Here you can find categories of articles, studies, and reflections. 
-                    Each section will expand as more writings are added. Use the links 
-                    on the left to explore topics of theology, Bible studies, history, 
-                    and practical Christian living. 
-                </p>
-                <p>
-                    <strong>Tip:</strong> Bookmark this page as the main hub for all writings.
-                </p>
+            <div class="category_box">
+                <h2>Bible Studies</h2>
+                <ul>
+                    <li><a href="articles/study-romans.html">Study in Romans</a></li>
+                    <li><a href="articles/psalm-23.html">Meditation on Psalm 23</a></li>
+                    <li><a href="articles/sermon-mount.html">The Sermon on the Mount</a></li>
+                </ul>
             </div>
-        </div> <!-- end of right -->
+
+            <div class="category_box">
+                <h2>Church History</h2>
+                <ul>
+                    <li><a href="articles/reformation.html">The Protestant Reformation</a></li>
+                    <li><a href="articles/church-fathers.html">Early Church Fathers</a></li>
+                    <li><a href="articles/confessions.html">Historic Confessions of Faith</a></li>
+                </ul>
+            </div>
+
+            <div class="category_box">
+                <h2>Practical Christian Living</h2>
+                <ul>
+                    <li><a href="articles/prayer-life.html">Growing in Prayer</a></li>
+                    <li><a href="articles/stewardship.html">Faithful Stewardship</a></li>
+                    <li><a href="articles/discipleship.html">Everyday Discipleship</a></li>
+                </ul>
+            </div>
+        </div> <!-- end of categories container -->
     </div> <!-- end of content -->
 
+    <!-- Footer -->
     <div id="templatemo_footer">
         Copyright © 2025 Reformed Archive
     </div> <!-- end of footer -->
