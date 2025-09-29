@@ -66,6 +66,7 @@ p { margin: 0; padding: 0; text-align: justify;}
 	clear: both;
 	padding-top: 5px;
 	font-weight: bold;
+	color: #A0522D; /* light brown for date/verse text */
 }
 
 /* menu */
@@ -98,8 +99,8 @@ p { margin: 0; padding: 0; text-align: justify;}
 	border-right: 1px solid #d5d5d5;	
 }
 
-#templatemo_menu li a:hover, #templatemo_menu li .current{
-	color: #1d2f53;
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+	color: #A0522D; /* light brown hover and current */
 }
 
 #templatemo_menu li .last{
@@ -144,6 +145,7 @@ p { margin: 0; padding: 0; text-align: justify;}
 	padding: 20px 0 0 15px;
 	margin-bottom: 30px;
 	background: url(images/templatemo_news_title_bg.gif) bottom left no-repeat;
+	color: #A0522D; /* light brown heading */
 }
 
 #templatemo_news_section .templatemo_news_box {
@@ -153,14 +155,14 @@ p { margin: 0; padding: 0; text-align: justify;}
 	padding: 0px;
 	margin: 0 0 10px 0;
 	font-size: 14px;
-	color: #0099CC;
+	color: #A0522D; /* light brown */
 }
 
 .templatemo_news_box h3 {
 	padding: 0px;
 	margin: 0 0 2px 0;
 	font-size: 11px;
-	color: #0099CC;
+	color: #A0522D; /* light brown (date style) */
 }
 
 #templatemo_left .left_col_section {
@@ -180,7 +182,7 @@ p { margin: 0; padding: 0; text-align: justify;}
 	margin: 0px 0px 15px 0px;
 	font-size: 22px;
 	font-weight: normal;
-	color: #0099CC;
+	color: #A0522D; /* light brown */
 }
 
 .right_col_section h2 {
@@ -188,7 +190,7 @@ p { margin: 0; padding: 0; text-align: justify;}
 	margin: 0px 0px 15px 0px;
 	font-size: 18px;
 	font-weight: bold;
-	color: #0099CC;
+	color: #A0522D; /* light brown */
 }
 
 .right_col_section h3 {
@@ -196,7 +198,7 @@ p { margin: 0; padding: 0; text-align: justify;}
 	font-weight: bold;
 	margin: 0px;
 	padding: 0px;
-	color: #0099CC;
+	color: #A0522D; /* light brown */
 }
 
 .right_col_section img {
@@ -259,4 +261,3 @@ p { margin: 0; padding: 0; text-align: justify;}
 	border-top: 5px solid #dadada;
 
 }
-
